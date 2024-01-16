@@ -19,7 +19,7 @@ function ClueInput({ vertical = false }: { vertical?: boolean }) {
 
     setText(event.target.value);
 
-    if (vertical) {
+    if (textarea) {
       // Auto-resize the textarea height based on its scrollHeight
       textarea.style.minHeight = "auto";
       textarea.style.minHeight = `${textarea.scrollHeight}px`;
